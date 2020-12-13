@@ -1,0 +1,27 @@
+
+.sun{
+    width: 140px;
+    height: 140px;
+    background-color: #fefefe;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    right: 4%;
+    transform: translateX(-50%);
+    transition: background-color 1s ease;
+  }
+  
+  .sun:before{
+    content: "";
+    display: block;
+    position: absolute;
+    background: yellow;
+    border-radius: 50%;
+    width: 200%;
+    height: 200%;
+    left: -50%;
+    top: -50%;
+    -webkit-filter: blur(3rem);
+    filter: blur(3rem);
+  }
+  

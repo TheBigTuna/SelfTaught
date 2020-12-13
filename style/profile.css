@@ -1,0 +1,317 @@
+#profileContainer{
+    margin-top: 8rem;
+      /* border-left: 6px solid #56baed;
+      border-bottom: 6px solid #56baed; 
+      border-top: 6px solid #56baed;
+      border-right: 6px solid #56baed; */
+  }
+
+#userInfoBG{
+    padding: 1rem;
+}
+
+#displayUser{
+    box-shadow:
+    0 1.7px 1.7px rgba(0, 0, 0, 0.042),
+    0 3.5px 3.5px rgba(0, 0, 0, 0.05),
+    0 8px 8px rgba(0, 0, 0, 0.07);
+}
+
+#displayUserName{
+    font-family: 'Nunito', sans-serif;
+  }
+
+#profileSidebar{
+    padding: 0rem 1rem;
+}
+
+#profileSidebar .list-group > li {
+    margin-bottom: -1px;
+    box-shadow:
+    0 1.7px 1.7px rgba(0, 0, 0, 0.042),
+    0 3.5px 3.5px rgba(0, 0, 0, 0.05),
+    0 8px 8px rgba(0, 0, 0, 0.07);
+}
+
+#profileSidebar li:hover{
+    background-color: rgba(0, 0, 0, 0.042);
+}
+  
+#profileSidebar  li > .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  
+#profileSidebar  li > .list-group-item:first-child {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+  }
+  
+#profileSidebar  li:last-child > .list-group-item {
+      border-bottom-right-radius: 6px;
+      border-bottom-left-radius: 6px;
+  }
+  
+#profileSidebar  li:first-child > .list-group-item {
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+  }
+  
+
+#profileSidebar .list-group > li  a{
+    color: #6c757d;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#profileSidebar .list-group > li  a:hover{
+    text-decoration: none;
+}
+
+#profileSidebar li a{
+    padding: 1rem;
+    color: #333333;
+}
+
+#profileSidebar .list-group-item:hover{
+    background-color: #F7F2F7;
+}
+
+
+
+
+
+
+
+
+
+
+.card{
+    min-height: 80px;
+    padding: 1rem 2rem;
+    margin: 1rem 0.5rem;
+    border-radius: 0.3rem;
+    background-color: #ffffff;
+    box-shadow:
+    0 0.8px 0.8px rgba(0, 0, 0, 0.02),
+    0 2px 2px rgba(0, 0, 0, 0.028),
+    0 3.8px 3.8px rgba(0, 0, 0, 0.035),
+    0 6.7px 6.7px rgba(0, 0, 0, 0.042),
+    0 12.5px 12.5px rgba(0, 0, 0, 0.05),
+    0 30px 30px rgba(0, 0, 0, 0.07);
+}
+
+.card:hover{
+    transform: translate3d(0px, -3px, 0px);
+    transition: 0.2s;
+}
+
+#courseText{
+  color: black;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+#courseSubText{
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 0.6em;
+}
+
+@media only screen and (max-width: 575px) {
+    .card {
+        margin: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .card {
+        width: 45%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .card {
+        width: 28%;
+        float: left;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .card {
+        float: left;
+    }
+}
+
+.card h4{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-top: 1rem;
+}
+
+.card i{
+    font-size: 3.4rem;
+}
+.card a{
+    text-decoration: none;
+}
+
+.card .info{
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    padding: .5rem 1.1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+    color: #606060;
+}
+
+.card .answer{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    height: 100%;
+    border-radius: 0.3rem;
+    background-color: #ffffff;
+    clip-path: circle(12% at 100% 0%);
+    transition: all 300ms ease-in-out;
+    z-index: 1;
+}
+
+.card .answer p{
+    color: #033F52;
+    font-size: 1.5rem;
+}
+
+.card .info:hover + .answer {
+    background-color: #FFF72D;
+    clip-path: circle(150% at 100% 0%);
+   }
+
+
+
+
+
+
+
+
+
+
+/* User Info form */
+#userInfoBG form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+  
+#userInfoBG h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+  
+  #userInfoBG  input[type="text"],
+  #userInfoBG input[type="password"],
+  #userInfoBG input[type="date"],
+  #userInfoBG input[type="datetime"],
+  #userInfoBG input[type="email"],
+  #userInfoBG input[type="number"],
+  #userInfoBG input[type="search"],
+  #userInfoBG input[type="tel"],
+  #userInfoBG input[type="time"],
+  #userInfoBG input[type="url"],
+  #userInfoBG textarea,
+  #userInfoBG select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  #userInfoBG input[type="radio"],
+  #userInfoBG input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  #userInfoBG select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  #userInfoBG button {
+    padding: 5px 14px 6px 12px;
+    color: #FFF;
+    background-color: #8167a9;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #8167a9;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+  
+  #userInfoBG fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  #userInfoBG legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  #userInfoBG label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  #userInfoBG label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  #userInfoBG .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    #userInfoBG form {
+      max-width: 480px;
+    }
+  
+  }

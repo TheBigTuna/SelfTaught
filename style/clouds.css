@@ -1,0 +1,78 @@
+
+.cloud, .cloud2, .cloud3, .cloud4 {
+    width:100px;
+    height:100px;
+    background:white;
+    border-radius:50% 50% 0% 0%;
+    box-shadow:inset -5px -5px 5px rgba(0,0,0,.15);
+    position:absolute;
+    left:50%;
+    top:15%;
+    animation:floatBy 30s linear infinite;
+  }
+  @keyframes floatBy {
+    0% { left:calc(100vw + 50px); }
+    100% { left:calc(0vw - 200px); }
+  }
+  .cloud2 {  
+    left:calc(100vw + 50px);
+    top:25%;
+    transform:scale(.55);
+    animation:floatBy2 30s linear 10s infinite;
+  }
+  @keyframes floatBy2 {
+    0% { left:calc(100vw + 50px); }
+    100% { left:calc(0vw - 200px); }
+  }
+  .cloud3 {
+    left:calc(0vw - 200px);
+    top:30%;
+    transform:scale(.5) scaleX(-1);
+    animation:floatBy3 50s linear 2s infinite;
+  }
+  @keyframes floatBy3 {
+    0% { left:calc(0vw - 200px); }
+    100% { left:calc(100vw + 50px); }
+  }
+  .cloud4 {
+    left:calc(0vw - 200px);
+    top: 23%;
+    transform:scale(1.4) scaleX(-1);
+    animation:floatBy4 90s linear 6s infinite;
+  }
+  @keyframes floatBy4 {
+    0% { left:calc(0vw - 200px); }
+    100% { left:calc(100vw + 50px); }
+  }
+  .cloud:before, .cloud2:before, .cloud3:before, .cloud4:before {
+    content:'';
+    width:50px;
+    height:50px;
+    background:white;
+    position:absolute;
+    top:50px;
+    left:-40px;
+    border-radius:50% 50% 0% 50%;
+    box-shadow:inset 5px -5px 5px rgba(0,0,0,.15);
+  }
+  .cloud:after, .cloud2:after, .cloud3:after, .cloud4:after {
+    content:'';
+    width:75px;
+    height:75px;
+    background:white;
+    position:absolute;
+    top:25px;
+    left:90px;
+    border-radius:50% 50% 50% 0%;
+    box-shadow:inset -5px -5px 5px rgba(0,0,0,.15);
+  }
+  
+  .cloudsOff {
+    animation:floatBy 30s linear infinite, cloudsOff 6s linear forwards;
+  }
+  
+  @keyframes cloudsOff {
+    50% { opacity:0; }
+    100% { opacity:0; }
+  }
+  

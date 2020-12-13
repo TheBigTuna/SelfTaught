@@ -1,2 +1,2 @@
-# SelfTaught
-A website highlighting and encouraging people to take non traditional routes to fulfil their aspirations.
+# animerooms
+Building A anime related site (in progress) 9/10/2019
