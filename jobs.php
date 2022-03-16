@@ -26,6 +26,9 @@
                                 elseif($_SESSION['UserCourses'][$i] == "CSS3"){
                                     $Icon = "<i class='devicon-css3-plain-wordmark colored'></i>";
                                 }
+                                elseif($_SESSION['UserCourses'][$i] == "Javascript"){
+                                    $Icon = "<i class='devicon-javascript-plain colored'></i>";
+                                }
                         ?>
                         <a href="lessons.php?Type=<?= $_SESSION['UserCourses'][$i]; ?>">
                             <div class="card">
@@ -70,9 +73,11 @@
         <div class="col-0 col-sm-1"></div>
         <div class="col-12 col-sm-10">
             <div id="courses">
-                <h2 id="courseText">Available Courses</h2>
-                <h2 id="courseSubText">Browse courses by whatever peaks your interest</h2>
-
+                <h2 id="courseText">Today's jobs</h2>
+                <h2 id="courseSubText">Browse jobs by whatever peaks your interest</h2>
+                <div style="width: 50%; margin: 0 auto;">
+                     <?php include('resources/jobSearchBar.php');?>
+                </div>
                 <?php
                     $FetchCourses = "SELECT DISTINCT * FROM omoore94_growthbook.courselist";        
                     $FetchCoursesResult = mysqli_query($conn, $FetchCourses);
@@ -82,6 +87,9 @@
                         }
                         elseif($row['CourseName'] == "CSS3"){
                             $Icon = "<i class='devicon-css3-plain-wordmark colored'></i>";
+                        }
+                        elseif($row['CourseName'] == "Javascript"){
+                            $Icon = "<i class='devicon-javascript-plain colored'></i>";
                         }
                 ?>
                 <a href="lessons.php?Type=<?= $row['CourseName']; ?>">

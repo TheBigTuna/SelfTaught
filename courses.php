@@ -26,6 +26,9 @@
                                 elseif($_SESSION['UserCourses'][$i] == "CSS3"){
                                     $Icon = "<i class='devicon-css3-plain-wordmark colored'></i>";
                                 }
+                                elseif($_SESSION['UserCourses'][$i] == "Javascript"){
+                                    $Icon = "<i class='devicon-javascript-plain colored'></i>";
+                                }
                         ?>
                         <a href="lessons.php?Type=<?= $_SESSION['UserCourses'][$i]; ?>">
                             <div class="card">
