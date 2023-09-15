@@ -6,7 +6,7 @@ $password = "";
 
 // $hostname = "omoore94.animerooms.com";
 // $username = "omoore94";
-// $password = "!Deandre94";
+// $password = "";
 // $database = "omoore94_animerooms";
 
 $conn = mysqli_connect($servername, $username, $password);
